@@ -19,7 +19,7 @@
 
 
 # Standard Python ignores (for allowed subdirectories)
-mock_data
+mock_data/
 __pycache__/
 *.py[cod]
 *$py.class
