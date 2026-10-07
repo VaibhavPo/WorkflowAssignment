@@ -39,8 +39,8 @@ test_cases = [
     {
         "id": 4,
         "workflow_id": "WF004",
-        "prompt": "Create a product description, short description, SEO title and meta description for this product. Use only the attributes provided in the file and clearly identify anything that is missing.",
-        "files": ["data/vendor_products.csv"]
+        "prompt": "Generate product content for the following product:\nProduct name: UrbanTrail Backpack\nCategory: Travel & Outdoor Bags\nAttributes: 25L capacity, laptop compartment, water-resistant, multiple pockets\nMaterial: Polyester\nColor: Black\nTarget audience: College students and young professionals\nGenerate: A detailed product description, A short product description, An SEO title, A meta description",
+        "files": []
     },
     {
         "id": 5,
