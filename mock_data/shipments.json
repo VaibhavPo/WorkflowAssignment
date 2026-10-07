@@ -1,0 +1,5 @@
+[
+    {"shipment_id": "SHP-1001", "order_id": "ORD-1001", "status": "in_transit", "carrier": "FedEx"},
+    {"shipment_id": "SHP-1002", "order_id": "ORD-1002", "status": "preparing", "carrier": "UPS"},
+    {"shipment_id": "SHP-1003", "order_id": "ORD-1003", "status": "delivered", "carrier": "USPS"}
+]

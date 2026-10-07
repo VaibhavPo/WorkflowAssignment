@@ -1,0 +1,5 @@
+[
+    {"task_id": "T-01", "assigned_to": "EMP-01", "status": "in_progress", "priority": "high"},
+    {"task_id": "T-02", "assigned_to": "EMP-02", "status": "todo", "priority": "medium"},
+    {"task_id": "T-03", "assigned_to": "EMP-03", "status": "completed", "priority": "low"}
+]

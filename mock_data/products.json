@@ -1,0 +1,5 @@
+[
+    {"product_id": "P-100", "name": "Widget A", "category": "widgets", "stock": 50},
+    {"product_id": "P-101", "name": "Widget B", "category": "widgets", "stock": 0},
+    {"product_id": "P-200", "name": "Gadget X", "category": "gadgets", "stock": 100}
+]

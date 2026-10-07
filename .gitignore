@@ -1,0 +1,19 @@
+# Ignore everything in the root
+/*
+
+# Explicitly allow these files and directories
+!/data/
+!/mock_data/
+!/workflow/
+!/tools/
+!/app.py
+!/.env.example
+!/.gitignore
+!/README.md
+!/requirements.txt
+
+# Standard Python ignores (for allowed subdirectories)
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
