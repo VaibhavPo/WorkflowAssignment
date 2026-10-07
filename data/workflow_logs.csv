@@ -1,0 +1,78 @@
+execution_id,workflow_id,timestamp,status,failed_step,error,execution_time_sec,slowest_step,slowest_step_sec
+EXE-0001,WF007,2026-09-01 12:22:38,failed,Validate inputs,Campaign dates missing from request,7.47,Create messaging,4.11
+EXE-0002,WF005,2026-09-02 03:36:51,success,,,1.96,Retrieve shipment information,1.08
+EXE-0003,WF010,2026-09-02 04:03:14,success,,,4.21,Calculate metrics,2.32
+EXE-0004,WF009,2026-09-02 06:02:17,success,,,2.6,Check workload,1.43
+EXE-0005,WF001,2026-09-02 15:56:02,success,,,1.42,Compare stock with threshold,0.78
+EXE-0006,WF003,2026-09-02 17:20:45,success,,,5.44,Validate required fields,2.99
+EXE-0007,WF001,2026-09-03 08:50:56,success,,,1.48,Compare stock with threshold,0.81
+EXE-0008,WF005,2026-09-03 09:38:14,success,,,2.25,Retrieve shipment information,1.24
+EXE-0009,WF002,2026-09-03 10:10:15,success,,,2.89,Match products by SKU,1.59
+EXE-0010,WF008,2026-09-03 12:21:16,success,,,2.17,Classify intent,1.19
+EXE-0011,WF001,2026-09-03 18:37:50,success,,,1.18,Compare stock with threshold,0.65
+EXE-0012,WF005,2026-09-04 03:28:46,success,,,1.95,Retrieve shipment information,1.07
+EXE-0013,WF010,2026-09-04 07:51:17,success,,,2.81,Calculate metrics,1.55
+EXE-0014,WF008,2026-09-04 22:25:05,success,,,2.9,Classify intent,1.59
+EXE-0015,WF001,2026-09-05 15:08:11,success,,,1.28,Compare stock with threshold,0.7
+EXE-0016,WF005,2026-09-05 19:42:20,success,,,1.76,Retrieve shipment information,0.97
+EXE-0017,WF002,2026-09-06 08:00:37,success,,,2.75,Match products by SKU,1.51
+EXE-0018,WF009,2026-09-06 13:47:36,escalated,,Escalated: no employee with required skills and capacity,2.04,Check workload,1.12
+EXE-0019,WF003,2026-09-06 14:23:14,success,,,5.01,Validate required fields,2.76
+EXE-0020,WF005,2026-09-07 03:38:23,success,,,1.63,Retrieve shipment information,0.9
+EXE-0021,WF006,2026-09-07 10:22:46,success,,,5.59,Compare attributes,3.07
+EXE-0022,WF002,2026-09-07 14:05:57,success,,,3.49,Match products by SKU,1.92
+EXE-0023,WF008,2026-09-08 13:13:46,success,,,2.29,Classify intent,1.26
+EXE-0024,WF006,2026-09-09 09:30:08,success,,,6.36,Compare attributes,3.5
+EXE-0025,WF003,2026-09-09 18:22:46,failed,Validate required fields,Parser exception on malformed row 14,5.22,Validate required fields,2.87
+EXE-0026,WF009,2026-09-10 01:06:45,success,,,2.04,Check workload,1.12
+EXE-0027,WF006,2026-09-10 22:41:50,success,,,6.15,Compare attributes,3.38
+EXE-0028,WF005,2026-09-11 03:47:28,failed,Retrieve shipment information,Shipment service timed out,60.0,Retrieve shipment information,33.0
+EXE-0029,WF002,2026-09-11 23:29:51,success,,,3.87,Match products by SKU,2.13
+EXE-0030,WF004,2026-09-12 03:50:30,success,,,10.9,Create product description,6.0
+EXE-0031,WF002,2026-09-12 04:10:17,success,,,3.5,Match products by SKU,1.93
+EXE-0032,WF001,2026-09-12 12:09:43,success,,,1.23,Compare stock with threshold,0.68
+EXE-0033,WF009,2026-09-13 01:32:39,escalated,,Escalated: no employee with required skills and capacity,1.89,Check workload,1.04
+EXE-0034,WF010,2026-09-13 03:40:28,success,,,3.08,Calculate metrics,1.69
+EXE-0035,WF006,2026-09-13 16:59:10,success,,,7.58,Compare attributes,4.17
+EXE-0036,WF009,2026-09-13 21:26:05,success,,,1.81,Check workload,1.0
+EXE-0037,WF007,2026-09-14 01:38:03,success,,,8.02,Create messaging,4.41
+EXE-0038,WF005,2026-09-14 15:16:40,failed,Search order data,Order database connection reset,2.16,Retrieve shipment information,1.19
+EXE-0039,WF005,2026-09-14 19:32:00,success,,,2.35,Retrieve shipment information,1.29
+EXE-0040,WF008,2026-09-14 20:42:45,success,,,2.6,Classify intent,1.43
+EXE-0041,WF003,2026-09-15 17:57:04,success,,,5.66,Validate required fields,3.11
+EXE-0042,WF001,2026-09-15 23:13:41,success,,,1.7,Compare stock with threshold,0.94
+EXE-0043,WF003,2026-09-16 22:52:37,failed,Detect columns,No SKU column found in uploaded file,4.56,Validate required fields,2.51
+EXE-0044,WF004,2026-09-17 01:22:09,success,,,11.59,Create product description,6.37
+EXE-0045,WF009,2026-09-17 09:26:28,success,,,2.19,Check workload,1.2
+EXE-0046,WF007,2026-09-19 02:16:49,success,,,8.21,Create messaging,4.52
+EXE-0047,WF003,2026-09-19 10:17:13,success,,,5.94,Validate required fields,3.27
+EXE-0048,WF001,2026-09-19 19:06:09,success,,,1.38,Compare stock with threshold,0.76
+EXE-0049,WF002,2026-09-20 04:53:21,success,,,2.66,Match products by SKU,1.46
+EXE-0050,WF005,2026-09-20 06:17:16,success,,,2.36,Retrieve shipment information,1.3
+EXE-0051,WF001,2026-09-21 05:06:35,success,,,1.4,Compare stock with threshold,0.77
+EXE-0052,WF006,2026-09-21 15:01:36,success,,,5.68,Compare attributes,3.12
+EXE-0053,WF004,2026-09-21 19:21:18,success,,,10.35,Create product description,5.69
+EXE-0054,WF009,2026-09-22 11:36:24,success,,,1.84,Check workload,1.01
+EXE-0055,WF001,2026-09-22 22:37:56,success,,,1.78,Compare stock with threshold,0.98
+EXE-0056,WF002,2026-09-23 08:06:13,success,,,3.16,Match products by SKU,1.74
+EXE-0057,WF001,2026-09-23 18:01:15,success,,,1.17,Compare stock with threshold,0.64
+EXE-0058,WF004,2026-09-24 04:55:32,success,,,7.89,Create product description,4.34
+EXE-0059,WF007,2026-09-24 14:51:54,success,,,6.12,Create messaging,3.37
+EXE-0060,WF002,2026-09-24 18:19:47,success,,,3.24,Match products by SKU,1.78
+EXE-0061,WF004,2026-09-25 11:43:51,success,,,10.67,Create product description,5.87
+EXE-0062,WF003,2026-09-26 10:47:32,success,,,4.53,Validate required fields,2.49
+EXE-0063,WF003,2026-09-27 15:46:15,success,,,5.22,Validate required fields,2.87
+EXE-0064,WF003,2026-09-28 16:21:47,failed,Read file,Corrupt XLSX archive: unable to open workbook,5.52,Validate required fields,3.04
+EXE-0065,WF005,2026-09-29 12:54:21,success,,,2.34,Retrieve shipment information,1.29
+EXE-0066,WF010,2026-09-29 20:48:20,success,,,2.91,Calculate metrics,1.6
+EXE-0067,WF009,2026-09-30 13:22:22,success,,,2.72,Check workload,1.5
+EXE-0068,WF002,2026-09-30 21:14:11,success,,,3.02,Match products by SKU,1.66
+EXE-0069,WF008,2026-10-01 10:28:24,success,,,3.12,Classify intent,1.72
+EXE-0070,WF004,2026-10-01 11:16:09,failed,Create product description,LLM request timed out after 60s,60.0,Create product description,33.0
+EXE-0071,WF008,2026-10-02 07:06:53,success,,,3.09,Classify intent,1.7
+EXE-0072,WF004,2026-10-03 20:21:42,success,,,9.85,Create product description,5.42
+EXE-0073,WF007,2026-10-04 03:18:20,success,,,8.47,Create messaging,4.66
+EXE-0074,WF006,2026-10-04 07:07:41,success,,,5.34,Compare attributes,2.94
+EXE-0075,WF002,2026-10-04 22:24:37,failed,Match products by SKU,Vendor file has non-UTF-8 encoding (cp1252),2.63,Match products by SKU,1.45
+EXE-0076,WF003,2026-10-05 01:38:39,success,,,4.12,Validate required fields,2.27
+EXE-0077,WF004,2026-10-05 12:18:14,success,,,11.5,Create product description,6.33

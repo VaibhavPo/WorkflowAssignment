@@ -1,0 +1,10 @@
+employee_id,name,role,skills,current_workload,max_workload,availability
+E101,Priya Sharma,Senior Developer,python;fastapi;sql;llm-integration,2,4,available
+E102,Rahul Verma,Backend Developer,python;sql;data-validation;excel-processing,2,4,available
+E103,Ananya Iyer,Frontend Developer,react;typescript;css;seo,0,4,available
+E104,Karan Mehta,Full-Stack Developer,python;react;sql;docker,4,4,available
+E105,Neha Joshi,Data Analyst,sql;excel-processing;reporting;python,1,3,available
+E106,Arjun Nair,DevOps Engineer,kubernetes;docker;aws;linux,0,3,on_leave
+E107,Sneha Kulkarni,Content Strategist,seo;copywriting;marketing;keyword-research,1,4,available
+E108,Vikram Singh,Backend Developer,python;sql;llm-integration;aws,4,4,available
+E109,Meera Pillai,Product Manager,product-management;marketing;stakeholder-management,0,3,available

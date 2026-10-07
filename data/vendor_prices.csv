@@ -1,0 +1,22 @@
+sku,vendor_name,vendor_price,availability,last_updated
+SKU-FW-1001,Trailhead Supply Pvt Ltd,3499,in_stock,2026-09-30
+SKU-FW-1002,Trailhead Supply Pvt Ltd,3149,in_stock,2026-09-30
+SKU-FW-1003,Trailhead Supply Pvt Ltd,4899,limited,2026-09-28
+SKU-FW-1004,Trailhead Supply Pvt Ltd,1299,in_stock,2026-09-30
+SKU-FW-1006,Trailhead Supply Pvt Ltd,1149,in_stock,2026-09-29
+SKU-BG-2001,Metro Leather Co.,4599,in_stock,2026-09-30
+SKU-BG-2002,Sahyadri Textiles,1290,in_stock,2026-09-27
+SKU-BG-2003,Metro Leather Co.,1710,in_stock,2026-09-30
+SKU-BG-2004,Metro Leather Co.,3299,in_stock,2026-09-30
+SKU-BG-2004,Sahyadri Textiles,3600,limited,2026-09-26
+SKU-AP-3001,Northstar Apparel Supply,1899,in_stock,2026-09-30
+SKU-AP-3002,Northstar Apparel Supply,899,in_stock,2026-09-30
+SKU-AP-3002,Sahyadri Textiles,949,in_stock,2026-09-26
+SKU-AP-3003,Northstar Apparel Supply,4800,in_stock,2026-09-29
+SKU-AP-3004,Sahyadri Textiles,2199,in_stock,2026-09-25
+SKU-AC-4001,Ganga Accessories Hub,2250,in_stock,2026-09-30
+SKU-AC-4002,Ganga Accessories Hub,1299,in_stock,2026-09-30
+SKU-AC-4003,Ganga Accessories Hub,,out_of_stock,2026-09-20
+SKU-AC-4004,Ganga Accessories Hub,549,in_stock,2026-09-30
+SKU-AC-4005,Ganga Accessories Hub,878,in_stock,2026-09-30
+SKU-FW-9999,Trailhead Supply Pvt Ltd,1850,discontinued,2026-09-15

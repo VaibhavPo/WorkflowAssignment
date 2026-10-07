@@ -1,0 +1,21 @@
+sku,product,category,collection,price,current_stock,minimum_stock,material,color,target_audience,attributes
+SKU-FW-1001,Trailblazer Trail Running Shoe,Footwear,SS26 New Arrivals,3499,42,15,Mesh and rubber,Navy,Men,breathable;lightweight;cushioned
+SKU-FW-1002,Urban Glide Sneaker,Footwear,SS26 New Arrivals,2799,8,12,Canvas,White,Unisex,casual;lightweight
+SKU-FW-1003,Summit Hiking Boot,Footwear,Autumn Trek,5299,0,6,Full-grain leather,Brown,Men,waterproof;ankle-support
+SKU-FW-1004,Breeze Canvas Slip-On,Footwear,,1299,25,10,Canvas,Beige,Women,casual
+SKU-FW-1006,Monsoon Rain Sandal,Footwear,SS26 New Arrivals,999,4,10,EVA foam,Yellow,Women,quick-dry;lightweight
+SKU-BG-2001,Metro Leather Laptop Bag,Bags,SS26 New Arrivals,4599,14,8,Vegetable-tanned leather,Tan,Men,laptop-sleeve;water-resistant
+SKU-BG-2002,Everyday Canvas Tote,Bags,Core Essentials,1499,3,10,Organic cotton canvas,Olive,Women,eco-friendly;zip-pocket
+SKU-BG-2003,Compact Crossbody Sling,Bags,SS26 New Arrivals,1899,0,5,Nylon,Black,Unisex,anti-theft
+SKU-BG-2004,Weekend Duffel 40L,Bags,Autumn Trek,3299,19,6,Ripstop nylon,Grey,Unisex,water-resistant;large-capacity
+SKU-AP-3001,Relaxed Linen Shirt,Apparel,SS26 New Arrivals,1899,36,12,Linen,Sky Blue,Men,breathable;summer
+SKU-AP-3002,Organic Cotton Tee,Apparel,Core Essentials,899,120,30,Organic cotton,White,Unisex,eco-friendly
+SKU-AP-3003,Merino Crew Sweater,Apparel,Autumn Trek,3999,7,10,Merino wool,Charcoal,Men,warm;odour-resistant
+SKU-AP-3004,Pleated Midi Skirt,Apparel,SS26 New Arrivals,2199,11,8,,Maroon,Women,
+SKU-AP-3005,Relaxed Linen Shirt (Sky Blue),Apparel,SS26 New Arrivals,1899,12,12,Linen,Sky Blue,Men,breathable;summer
+SKU-AC-4001,Polarised Aviator Sunglasses,Accessories,Core Essentials,2499,22,8,Metal frame,Gold,Unisex,UV400;polarised
+SKU-AC-4002,Leather Bifold Wallet,Accessories,Core Essentials,1299,31,10,Genuine leather,Black,Men,RFID-blocking
+SKU-AC-4003,Woven Leather Belt,Accessories,Autumn Trek,1199,0,8,Leather,Tan,Unisex,
+SKU-AC-4004,Sport Smart Watch Strap,Accessories,,599,9,10,Silicone,Midnight Blue,Unisex,
+SKU-AC-4005,Recycled Steel Water Bottle,Accessories,Core Essentials,799,58,20,Stainless steel,Silver,Unisex,insulated;leakproof
+SKU-FW-1001,Trailblazer Trail Running Shoe,Footwear,SS26 New Arrivals,3499,42,15,Mesh and rubber,Navy,Men,breathable;lightweight;cushioned

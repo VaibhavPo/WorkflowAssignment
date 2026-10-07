@@ -1,0 +1,23 @@
+task_id,description,required_skills,priority,deadline,status,assigned_employee_id
+T-2041,Fix SKU mapping bug in vendor price import causing mismatched matches,python;sql;data-validation,urgent,2026-10-08,open,
+T-2042,Build Excel parser for vendor uploads with column normalization,python;excel-processing;data-validation,high,2026-10-15,assigned,E102
+T-2043,Add LLM prompt template for product description generation,python;llm-integration,high,2026-10-12,in_progress,E101
+T-2044,Write SEO title and meta rules for category pages,seo;copywriting,medium,2026-10-20,open,
+T-2045,Provision Kubernetes cluster for the workflow runner,kubernetes;docker;aws,high,2026-10-10,open,
+T-2046,Optimise order-to-shipment lookup query,sql;python,medium,2026-10-18,open,
+T-2047,Build Rust image resizer for catalogue assets,rust;aws,low,2026-11-01,open,
+T-2048,Build monthly sales reporting workbook,excel-processing;reporting,medium,2026-10-16,in_progress,E105
+T-2049,Keyword intent classifier prototype,python;llm-integration;seo,high,2026-10-14,open,
+T-2050,Refactor product catalogue import module,python;fastapi,medium,2026-10-22,assigned,E101
+T-2051,Add retry logic to shipment API client,python;sql,high,2026-10-13,in_progress,E102
+T-2052,Dockerise reporting service,docker;python,medium,2026-10-17,in_progress,E104
+T-2053,Set up staging database backups,sql;docker,medium,2026-10-19,assigned,E104
+T-2054,Refactor checkout webhook handler,python;react,medium,2026-10-21,assigned,E104
+T-2055,Build product filter UI component,react,low,2026-10-23,in_progress,E104
+T-2056,Deploy shipment tracking Lambda,aws;python,high,2026-10-11,assigned,E108
+T-2057,Tune orders table indexes,sql,medium,2026-10-16,in_progress,E108
+T-2058,Build prompt evaluation harness,llm-integration;python,medium,2026-10-24,assigned,E108
+T-2059,Audit API rate limits,python;aws,low,2026-10-27,in_progress,E108
+T-2060,Draft SEO keyword map for SS26 collection,seo;keyword-research,high,2026-10-09,in_progress,E107
+T-2061,Redesign product page image gallery,react;typescript;css,medium,2026-10-25,open,
+T-2062,Finalise Q3 product roadmap,product-management;stakeholder-management,high,2026-09-28,completed,E109
