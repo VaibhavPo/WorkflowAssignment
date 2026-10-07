@@ -1,5 +1,0 @@
-[
-    {"employee_id": "EMP-01", "name": "Alice Smith", "role": "engineer", "availability": "available"},
-    {"employee_id": "EMP-02", "name": "Bob Jones", "role": "manager", "availability": "busy"},
-    {"employee_id": "EMP-03", "name": "Charlie Brown", "role": "engineer", "availability": "available"}
-]
