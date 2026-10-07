@@ -3,7 +3,7 @@
 
 # Explicitly allow these files and directories
 !/data/
-!/mock_data/
+
 !/workflow/
 !/tools/
 !/app.py
