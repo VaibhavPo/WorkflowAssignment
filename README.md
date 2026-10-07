@@ -13,7 +13,7 @@ This project is a highly scalable, dynamic workflow-based chatbot application bu
 1. **Clone the repository:**
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/VaibhavPo/WorkflowAssignment
    cd WorkflowAssignment
    ```
 
