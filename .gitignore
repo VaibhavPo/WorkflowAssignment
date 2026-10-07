@@ -11,6 +11,9 @@
 !/.gitignore
 !/README.md
 !/requirements.txt
+!/pages/
+
+
 
 # Standard Python ignores (for allowed subdirectories)
 __pycache__/
