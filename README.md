@@ -8,6 +8,17 @@ This project is a highly scalable, dynamic workflow-based chatbot application bu
 - **LLM Routing:** An intelligent router automatically reads the registry and routes user queries to the appropriate workflow.
 - **Plug-and-Play Architecture:** Easily scale to hundreds of workflows without merge conflicts.
 
+## Architecture
+
+The architecture has four main parts.
+
+1. First, the user's request goes to the agent.
+2. The agent identifies the matching workflow from the workflow definitions.
+3. Then the workflow executor runs the required tools and business logic.
+4. Finally, the result is returned to the user along with the workflow and execution steps.
+
+![Alt text](architecture.png)
+
 ## Installation
 
 1. **Clone the repository:**
@@ -18,11 +29,16 @@ This project is a highly scalable, dynamic workflow-based chatbot application bu
    ```
 
 2. **Set up environment variables:**
-   Copy the provided `.env.example` to `.env` and fill in your API keys (e.g., Groq API key).
+   Copy the provided `.env.example` to `.env` and fill in your API keys.
 
    ```bash
    cp .env.example .env
    ```
+
+   **Getting your Groq API Key:**
+   - Go to the [Groq Console (API Keys)](https://console.groq.com/keys).
+   - Create a new API key.
+   - Open the newly created `.env` file and paste your key: `GROQ_API_KEY=your_api_key_here`
 
 3. **Install dependencies:**
    Make sure you have Python installed, then install the required packages (Streamlit, LangGraph, etc.):
@@ -76,15 +92,15 @@ By keeping workflows completely isolated in their own folders and relying on the
 
 > 👉 **[Click here to view the latest automated test execution results](test_results.md)**
 
-| #   | Workflow | Test prompt                                                                                                                                                                                                          | Associated File(s)                            | Main thing being tested                       |
-| --- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | --------------------------------------------- |
-| 1   | WF001    | "Check the inventory and tell me which products need restocking. Also calculate how many units should be reordered for each one."                                                                                    | `data/sample_inventory.csv`                   | threshold + reorder calculation               |
-| 2   | WF002    | "Validate our product prices against the vendor price list and show only products where the vendor price differs from ours by more than 10%."                                                                        | `data/vendor_prices.csv`, `data/products.csv` | SKU matching + percentage decision            |
-| 3   | WF003    | "Process this vendor Excel file. Clean the column names, identify rows missing either SKU or product name, and give me the cleaned data and invalid-row report."                                                     | `data/vendor_products.csv`                    | file ingestion + validation                   |
-| 4   | WF004    | "Generate product content for the following product:<br>Product name: UrbanTrail Backpack<br>Category: Travel & Outdoor Bags<br>Attributes: 25L capacity, laptop compartment, water-resistant, multiple pockets<br>Material: Polyester<br>Color: Black<br>Target audience: College students and young professionals<br>Generate: A detailed product description, A short product description, An SEO title, A meta description" | None | LLM generation + no hallucination |
-| 5   | WF005    | "Check the status of order ORD-1001 and tell me its shipment and tracking information."                                                                                                                              | `data/orders.db`                              | missing-order/error handling                  |
-| 6   | WF006    | "Scan the product catalog for duplicates. Separate definite duplicates from possible duplicates and include your confidence for each possible match."                                                                | `data/products.csv`                           | exact matching + similarity/confidence        |
-| 7   | WF007    | "Create a campaign brief for our new product collection. The target audience is young professionals and the promotion is 20% off."                                                                                   | None                                          | missing required inputs                       |
-| 8   | WF008    | "Classify these keywords by search intent, remove duplicates, map them to the appropriate product/category pages, and identify the highest-priority keywords."                                                       | `data/keywords_inclusive.csv`                 | classification + mapping + prioritization     |
-| 9   | WF009    | "Assign this urgent development task to the best employee based on their skills and current workload. If nobody has both the required skills and enough capacity, escalate instead of assigning someone unsuitable." | `data/tasks.csv`, `data/employee_data.csv`    | ranking + capacity + escalation               |
-| 10  | WF010    | "Analyze the workflow execution logs and tell me which workflows are performing poorly. Include failure rate, average execution time, frequent errors, slow steps, and recommendations."                             | `data/workflow_logs.csv`                      | aggregation + threshold detection + reporting |
+| #   | Workflow | Test prompt                                                                                                                                                                                                                                                                                                                                                                                                                     | Associated File(s)                            | Main thing being tested                       |
+| --- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | --------------------------------------------- |
+| 1   | WF001    | "Check the inventory and tell me which products need restocking. Also calculate how many units should be reordered for each one."                                                                                                                                                                                                                                                                                               | `data/sample_inventory.csv`                   | threshold + reorder calculation               |
+| 2   | WF002    | "Validate our product prices against the vendor price list and show only products where the vendor price differs from ours by more than 10%."                                                                                                                                                                                                                                                                                   | `data/vendor_prices.csv`, `data/products.csv` | SKU matching + percentage decision            |
+| 3   | WF003    | "Process this vendor Excel file. Clean the column names, identify rows missing either SKU or product name, and give me the cleaned data and invalid-row report."                                                                                                                                                                                                                                                                | `data/vendor_products.csv`                    | file ingestion + validation                   |
+| 4   | WF004    | "Generate product content for the following product:<br>Product name: UrbanTrail Backpack<br>Category: Travel & Outdoor Bags<br>Attributes: 25L capacity, laptop compartment, water-resistant, multiple pockets<br>Material: Polyester<br>Color: Black<br>Target audience: College students and young professionals<br>Generate: A detailed product description, A short product description, An SEO title, A meta description" | None                                          | LLM generation + no hallucination             |
+| 5   | WF005    | "Check the status of order ORD-1001 and tell me its shipment and tracking information."                                                                                                                                                                                                                                                                                                                                         | `data/orders.db`                              | missing-order/error handling                  |
+| 6   | WF006    | "Scan the product catalog for duplicates. Separate definite duplicates from possible duplicates and include your confidence for each possible match."                                                                                                                                                                                                                                                                           | `data/products.csv`                           | exact matching + similarity/confidence        |
+| 7   | WF007    | "Create a campaign brief for our new product collection. The target audience is young professionals and the promotion is 20% off."                                                                                                                                                                                                                                                                                              | None                                          | missing required inputs                       |
+| 8   | WF008    | "Classify these keywords by search intent, remove duplicates, map them to the appropriate product/category pages, and identify the highest-priority keywords."                                                                                                                                                                                                                                                                  | `data/keywords_inclusive.csv`                 | classification + mapping + prioritization     |
+| 9   | WF009    | "Assign this urgent development task to the best employee based on their skills and current workload. If nobody has both the required skills and enough capacity, escalate instead of assigning someone unsuitable."                                                                                                                                                                                                            | `data/tasks.csv`, `data/employee_data.csv`    | ranking + capacity + escalation               |
+| 10  | WF010    | "Analyze the workflow execution logs and tell me which workflows are performing poorly. Include failure rate, average execution time, frequent errors, slow steps, and recommendations."                                                                                                                                                                                                                                        | `data/workflow_logs.csv`                      | aggregation + threshold detection + reporting |
